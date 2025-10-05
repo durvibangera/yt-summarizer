@@ -1,0 +1,54 @@
+# --- Python / Backend ---
+
+# Virtual Environment
+# Ignores the venv folder, which contains all installed packages
+venv/
+env/
+*/venv/
+*/env/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Project Specific ---
+
+# Temporary audio files downloaded by the backend
+# This ensures you don't commit media files to your repo
+/backend-server/*.mp3
+
+# Environment variables file (for API keys, etc.)
+# Never commit secrets!
+.env
+.env.*
+!.env.example
+
+# --- OS & Editor Specific ---
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+
+# --- Frontend / Node.js (Good practice for future expansion) ---
+
+# Dependency directories
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
